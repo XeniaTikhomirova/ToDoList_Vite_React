@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CreateTodo from "./CreateTodo";
+import styles from "./todo.module.css"
 
 export default function Todo() {
   const [task, setTask] = useState("");
@@ -25,6 +26,8 @@ export default function Todo() {
       {tasks.map((item) => (
         <CreateTodo key={item} item={item}/>
       ))}
+
+      <h1 className={styles.header}>It's ToDo</h1>
     </div>
   );
 }

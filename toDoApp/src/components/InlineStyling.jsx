@@ -1,12 +1,9 @@
-let header = {
-   color: "green",
-   fontSize: "20px",
-}
+import styles from "./inlinestyling.module.css"
 
 export default function InlineStyling() {
   return (
     <div>
-      <h1 style={{color: "turquoise", fontSize: "13px"}}>Hello, world!</h1>
+      <h1 className={styles.header}>Hello, world!</h1>
     </div>
   );
 }

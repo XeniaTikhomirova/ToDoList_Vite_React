@@ -1,10 +1,11 @@
-import InlineStyling from "./components/InlineStyling";
-import Todo from "./components/Todo"
+import styles from "./App.css"
+import Todo from "./components/Todo";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="app">
-      <InlineStyling />
+    <div className="App">
+      <Header />
       <Todo />
     </div>
   );

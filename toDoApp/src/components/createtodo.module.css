@@ -1,0 +1,27 @@
+.itemlist {
+   background-color: rgb(219, 215, 215, 0.6);
+   width: 500px;
+   margin: 0 auto;
+}
+
+.itemlistName{
+   background-color: white;
+   font-weight: bold;
+   padding: 20px;
+}
+
+.line {
+   border: 1px solid gainsboro;
+}
+
+@media only screen and (max-width: 585px) {
+   .itemlist{
+      width: 350px;
+   }
+ }
+
+ @media only screen and (max-width: 466px) {
+   .itemlist{
+      width: 320px;
+   }
+}

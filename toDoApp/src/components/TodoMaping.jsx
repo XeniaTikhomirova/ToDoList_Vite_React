@@ -1,11 +1,12 @@
-import CreateTodo from "./CreateTodo"
+import CreateTodo from "./CreateTodo";
+import styles  from "./todomaping.module.css";
 
-export default function TodoMaping({tasks}) {
+export default function TodoMaping({ tasks }) {
   return (
-     <div>
-    {tasks.map((item) => (
-      <CreateTodo key={item} item={item} />
-    ))}
-  </div>
-   )
+    <div className={styles.list}>
+      {tasks.map((item) => (
+        <CreateTodo key={item} item={item} />
+      ))}
+    </div>
+  );
 }

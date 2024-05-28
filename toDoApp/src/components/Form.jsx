@@ -1,6 +1,7 @@
 import { useState } from "react";
+import styles from "./form.module.css";
 
-export default function Form({tasks, setTasks}) {
+export default function Form({ tasks, setTasks }) {
   const [task, setTask] = useState("");
 
   function handleSubmit(evt) {
@@ -10,13 +11,19 @@ export default function Form({tasks, setTasks}) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        onChange={(evt) => setTask(evt.target.value)}
-        type="text"
-        value={task}
-      />
-      <button type="submit">Add</button>
+    <form className={styles.todoform} onSubmit={handleSubmit}>
+      <div className={styles.formcontainer}>
+        <input
+          className={styles.todoinput}
+          onChange={(evt) => setTask(evt.target.value)}
+          type="text"
+          value={task}
+          placeholder="Füge hier deine Aufgabe hinzu..."
+        />
+        <button className={styles.todobtn} type="submit">
+          Addieren
+        </button>
+      </div>
     </form>
   );
 }

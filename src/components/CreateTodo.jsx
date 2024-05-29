@@ -5,7 +5,7 @@ export default function CreateTodo({ item, tasks, setTasks }) {
     console.log(`Item for ${item.name} deleted!`);
     setTasks(
       tasks.filter((task) => {
-        task.name !== item.name;
+        task !== item;
       })
     );
   }

@@ -3,6 +3,7 @@ import styles from "./createtodo.module.css";
 export default function CreateTodo({ item, tasks, setTasks }) {
   function handleDelete(item) {
     console.log(`Item for ${item.name} deleted!`);
+    console.log("Hello")
     setTasks(
       tasks.filter((task) => {
         task !== item;

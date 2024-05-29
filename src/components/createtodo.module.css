@@ -1,0 +1,48 @@
+.itemlist {
+   width: 500px;
+   margin: 0 auto;
+   border-radius: 10px;
+}
+
+.itemlistName{
+   background-color: white;
+   font-weight: bold;
+   padding: 20px;
+   border-radius: 9px;
+}
+
+.line {
+   width: 88%;
+   border: 0.4px solid rgb(178, 176, 176);
+   border-radius: 9px;
+   margin: 0 auto;
+}
+
+.buttonItem {
+   float: right;
+   border: none;
+   background-color: rgb(158, 159, 158);
+   border-radius: 5%;
+   box-shadow: 0px 3px 10px rgb(174, 172, 172);
+   padding: 5px;
+   margin-top: -5px;
+   color: white;
+}
+
+.buttonItem:hover{
+   box-shadow: 0px 4px 16px rgb(174, 172, 172);
+   background-color: rgb(121, 123, 121);
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 585px) {
+   .itemlist{
+      width: 350px;
+   }
+ }
+
+ @media only screen and (max-width: 466px) {
+   .itemlist{
+      width: 320px;
+   }
+}

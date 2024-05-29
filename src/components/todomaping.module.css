@@ -1,0 +1,21 @@
+.list {
+   width: 500px;
+   border-radius: 9px;
+   box-shadow: 0 4px 6px rgb(144, 144, 144, 0.2);
+   margin: 0 auto;
+   margin-top: 30px;
+   color: rgb(93, 93, 93);
+}
+
+@media only screen and (max-width: 585px) {
+   .list {
+      width: 350px;
+   }
+ }
+
+ @media only screen and (max-width: 466px) {
+   .list {
+      width: 320px;
+   }
+
+}

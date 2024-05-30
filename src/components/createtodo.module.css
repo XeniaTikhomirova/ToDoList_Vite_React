@@ -11,6 +11,10 @@
    border-radius: 9px;
 }
 
+.linedThrough {
+   text-decoration: line-through;
+}
+
 .line {
    width: 88%;
    border: 0.4px solid rgb(178, 176, 176);

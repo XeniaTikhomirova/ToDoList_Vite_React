@@ -1,6 +1,14 @@
 import styles from "./createtodo.module.css";
 
 export default function CreateTodo({ item, tasks, setTasks }) {
+  function handleClick(name) {
+    console.log(
+      tasks.map((task) => {
+        task.name === name ? { ...task, isDone: !task.isDone } : task;
+      })
+    );
+  }
+
   function handleDelete(item) {
     console.log(`Item for ${item.name} deleted!`);
     setTasks(tasks.filter((task) => task.name !== item.name));
@@ -9,7 +17,8 @@ export default function CreateTodo({ item, tasks, setTasks }) {
   return (
     <div className={styles.itemlist}>
       <div className={styles.itemlistName}>
-        {item.name}
+        <span onClick={() => handleClick(item.name)}>{item.name}</span>
+
         <span>
           <button
             className={styles.buttonItem}

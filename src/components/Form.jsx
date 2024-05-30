@@ -6,6 +6,7 @@ export default function Form({ tasks, setTasks }) {
 
   function handleSubmit(evt) {
     evt.preventDefault();
+    if (task.name.trim() === "") return;
     setTasks([...tasks, task]);
     setTask({ name: "", isDone: false });
   }

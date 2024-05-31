@@ -1,12 +1,15 @@
 import styles from "./createtodo.module.css";
 
 export default function CreateTodo({ item, tasks, setTasks }) {
+  const className = item.isDone ? styles.linedThrough : "";
+
   function handleClick(name) {
-    console.log(
-      tasks.map((task) => {
-        task.name === name ? { ...task, isDone: !task.isDone } : task;
-      })
+    const newList = tasks.map((task) =>
+      task.name === name ? { ...task, isDone: !task.isDone } : task
     );
+    setTasks(newList);
+    console.log(tasks);
+    console.log(`${name} has been clicked!`);
   }
 
   function handleDelete(item) {
@@ -17,7 +20,9 @@ export default function CreateTodo({ item, tasks, setTasks }) {
   return (
     <div className={styles.itemlist}>
       <div className={styles.itemlistName}>
-        <span onClick={() => handleClick(item.name)}>{item.name}</span>
+        <span onClick={() => handleClick(item.name)} className={className}>
+          {item.name}
+        </span>
 
         <span>
           <button

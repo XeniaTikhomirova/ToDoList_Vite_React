@@ -4,10 +4,11 @@ export default function CreateTodo({ item, tasks, setTasks }) {
   const className = item.isDone ? styles.linedThrough : "";
 
   function handleClick(name) {
-    const newList = tasks.map((task) =>
-      task.name === name ? { ...task, isDone: !task.isDone } : task
+    setTasks(
+      tasks.map((task) =>
+        task.name === name ? { ...task, isDone: !task.isDone } : task
+      )
     );
-    setTasks(newList);
     console.log(tasks);
     console.log(`${name} has been clicked!`);
   }

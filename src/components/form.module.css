@@ -1,72 +1,90 @@
 .todoform {
-   background-color: #fff;
-   border-radius: 9px;
-   margin: 0 auto;
-   margin-top: 50px;
-   padding: 30px;
-   width: 500px;
-   box-shadow: 0px 4px 6px rgb(174, 172, 172);
+  background-color: #fff;
+  border-radius: 9px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0px 4px 6px rgb(174, 172, 172);
+  text-align: center;
+}
+
+.todoinput {
+  font-family: "Raleway", sans-serif;
+  width: 70%;
+  border: none;
+  font-size: 20px;
+}
+
+.todoinput:focus {
+  outline: none;
+}
+
+.todobtn {
+  border: none;
+  background-color: rgb(158, 159, 158);
+  border-radius: 5%;
+  box-shadow: 0px 3px 10px rgb(174, 172, 172);
+  padding: 5px;
+  color: white;
+}
+
+.todobtn:hover {
+  box-shadow: 0px 4px 16px rgb(174, 172, 172);
+  background-color: rgb(121, 123, 121);
+  cursor: pointer;
+}
+
+.msg {
+   color: rgb(229, 109, 109);
    text-align: center;
-}
-
-.todoinput{
-   font-family: "Raleway", sans-serif;
-   width: 70%;
-   border: none;
-   font-size: 20px;
-}
-
-.todoinput:focus{
-   outline: none;
-}
-
-.todobtn{
-   border: none;
-   background-color: rgb(158, 159, 158);
-   border-radius: 5%;
-   box-shadow: 0px 3px 10px rgb(174, 172, 172);
-   padding: 5px;
-   color: white;
-}
-
-.todobtn:hover{
-   box-shadow: 0px 4px 16px rgb(174, 172, 172);
-   background-color: rgb(121, 123, 121);
-   cursor: pointer;
+   margin: 14px;
 }
 
 @media only screen and (max-width: 585px) {
-   .todoform {
-      width: 400px;
-      padding: 20px;
-   }
-   .todoinput{
-      width: 80%;
-      font-size: 17px;
-   }
-   .list {
-      width: 350px;
-   }
-   .itemlist{
-      width: 350px;
-   }
- }
+  .todoform {
+    width: 400px;
+    padding: 20px;
+  }
+  .todoinput {
+    width: 80%;
+    font-size: 17px;
+  }
+  .list {
+    width: 350px;
+  }
+  .itemlist {
+    width: 350px;
+  }
+}
 
- @media only screen and (max-width: 466px) {
-   .todoform {
-      width: 350px;
-      padding: 10px;
-   }
-   .todoinput{
-      width: 70%;
-      font-size: 15px;
-   }
-   
-   .list {
-      width: 320px;
-   }
+@media only screen and (max-width: 466px) {
+  .todoform {
+    width: 350px;
+    padding: 10px;
+  }
+  .todoinput {
+    width: 70%;
+    font-size: 15px;
+  }
 
-   .itemlist{
-      width: 320px;
-   }
+  .list {
+    width: 320px;
+  }
+
+  .itemlist {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .todoform {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .todoform {
+    width: 250px;
+  }
 }

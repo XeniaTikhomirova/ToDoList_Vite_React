@@ -1,7 +1,11 @@
 .itemlist {
    width: 500px;
    margin: 0 auto;
-   border-radius: 10px;
+   border-radius: 10px;   
+}
+
+.itemlist:last-child{
+   padding-bottom: 130px;
 }
 
 .itemlistName{
